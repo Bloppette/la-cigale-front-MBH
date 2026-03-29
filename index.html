@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>La Cigale - Brasserie Mythique à Nantes</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#5B96C3", // The signature light blue
+                        gold: "#C5A059",
+                        "background-light": "#FDFBF7", // Creamy ivory
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        display: ["Cinzel", "serif"],
+                        serif: ["Playfair Display", "serif"],
+                        sans: ["Montserrat", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "2px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .art-nouveau-border {
+            border-image: linear-gradient(to bottom, #C5A059, #EAD6A8, #C5A059) 1;
+            border-width: 1px;
+            border-style: solid;
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300">
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gold/20 px-4 py-3 flex justify-between items-center">
+<button class="p-2">
+<span class="material-icons-outlined text-gold">menu</span>
+</button>
+<div class="flex flex-col items-center">
+<h1 class="font-display text-2xl tracking-[0.2em] text-primary">LA CIGALE</h1>
+<p class="text-[8px] tracking-[0.3em] uppercase text-gold -mt-1">Nantes depuis 1895</p>
+</div>
+<a class="bg-primary hover:bg-primary/90 text-white px-4 py-2 text-[10px] uppercase tracking-widest font-bold transition-all shadow-sm" href="#">
+            Réserver
+        </a>
+</header>
+<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+<img alt="Intérieur Art Nouveau de La Cigale" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqMhiQMnwtloL59YmQK0leNidTK7y9nKzFHk_DJAc_8osWRePIMxsm8IzKsBlXqATHvKsE0qo-_hM8yIC9JYVUX-GuI3LeT3yQesCqJ6of2R9q1FfhYxRmauNcuq5Etd1t5cshtPwt_COmm68rfKzKU9p6dXyaPeX3rBcEAhM6slRyGKmXigoGtOVR2oqtcDgb2d2TJ6V_mV2cicZ5flU42M4lyRoXYzBPlmfA-3okxFsax_1vzmjLdZD2zvRdET6LYs2lrymG5fs"/>
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="relative z-10 text-center px-6">
+<p class="text-gold font-serif italic text-lg mb-4 opacity-90 tracking-wide">
+                « Peut-être la plus belle Brasserie du monde »
+            </p>
+<h2 class="text-white font-display text-4xl mb-8 leading-tight">
+                L'Art de Vivre <br/> à la Nantaise
+            </h2>
+<button class="border-2 border-white text-white px-8 py-4 uppercase tracking-[0.2em] text-xs font-bold hover:bg-white hover:text-black transition-all">
+                Réserver une table
+            </button>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-icons-outlined text-white/50">expand_more</span>
+</div>
+</section>
+<section class="py-20 px-8 text-center max-w-2xl mx-auto">
+<div class="inline-block mb-6">
+<div class="w-12 h-[1px] bg-gold mx-auto"></div>
+</div>
+<h3 class="font-display text-gold text-xl tracking-widest mb-6 uppercase">Une Institution depuis 1895</h3>
+<p class="font-sans leading-relaxed text-sm dark:text-slate-400">
+            Classée Monument Historique, La Cigale n’est pas un restaurant comme les autres. 
+            C'est un voyage hors du temps au cœur de Nantes, où les dorures du XIXe siècle rencontrent 
+            une gastronomie authentique et généreuse.
+        </p>
+<div class="mt-8">
+<a class="text-primary font-display text-xs tracking-widest uppercase underline underline-offset-8 decoration-gold/50" href="#">En savoir plus</a>
+</div>
+</section>
+<section class="grid grid-cols-1 gap-1 px-1">
+<div class="relative h-64 flex items-center justify-center group overflow-hidden">
+<img alt="Petit Déjeuner à la Cigale" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJMA8VkG8W9IK794qNNbHf9Xzp1A5AypOlbA55Uf_7zmmG56XuBXKxpJJ9sY5OfInLDF0oUiIVzodOz16aXQ156bDgPvRuIluKIK8DUbXYN2QqMkb8wdDPC_DntMEebBlI7AQTCxTRHyPht4C0Yiuw2-Q8tOcV7Ij4xaaRlebaW4975eGqSf7r1aotmYOJeSAmPi02QJ03c0xbq6saEf8OtRQ4_zo5iSx0Jxm--iaKngNCZwIOdZu991Kljzl3oyBQ2ydGpVVXCsk"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+<div class="relative z-10 text-center">
+<h4 class="text-white font-display text-2xl tracking-widest mb-2">Petit-Déjeuner</h4>
+<p class="text-gold text-[10px] uppercase tracking-[0.2em]">Dès 7h30 chaque matin</p>
+</div>
+</div>
+<div class="relative h-64 flex items-center justify-center group overflow-hidden">
+<img alt="Plateau de fruits de mer" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhr8G6JlUk4RVQmY85hUSNJE4ong7EKKPFcK3Pg1_86jSnWPUMJ4jWkLZkpPd_MBvqVI9G1dLakx4D3DroLDJ2uiefRq2jQD1XjIX14hqKbhnD9Mv3YGEx7AvheJZE2u88q4NK5lRIiJrQVrrprOC3wJELvj1G8HkhHHEWu44aUnQbcCV9xEw9oZGiiFOuaTnPMINc5w84bAhQYo6hywBrVphA0w_9KxjNYdmewpyHqj7Uh8ZZ5EdDH3m7LB5ba-xoUQWdV2PBxUo"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+<div class="relative z-10 text-center">
+<h4 class="text-white font-display text-2xl tracking-widest mb-2">Déjeuner &amp; Dîner</h4>
+<p class="text-gold text-[10px] uppercase tracking-[0.2em]">Cuisine de Brasserie</p>
+</div>
+</div>
+<div class="relative h-64 flex items-center justify-center group overflow-hidden">
+<img alt="Cave à vin" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADCa_PrJYpKP1bw3-yeW_c1lC6B-hHmNKzmINO-b_WWmFqL4qLggwvjpue2lEnh7syU_Y25Q3Lw7Zic96VcPLfmRfEY3hn-s4nXHFMOk2ADhFYAHB6JQvKErT42QbgXsY2DExJ-6NWbAWI7UsVR_FdwTaL5sJbQ3n4KGVqXPLj47WR7Djo-Bm50Hus51cAcf8FwEauIXDrTnI1Ejggid66hnxIxZwACHKVB3QeVfJGsLcKgaB-zwIeEa9R5jsKbNQxlH6CBS5gbbc"/>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+<div class="relative z-10 text-center">
+<h4 class="text-white font-display text-2xl tracking-widest mb-2">La Carte des Vins</h4>
+<p class="text-gold text-[10px] uppercase tracking-[0.2em]">Sélections d'exception</p>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white dark:bg-zinc-900 px-6">
+<div class="mb-20">
+<img alt="Les Salons Privés" class="w-full h-80 object-cover mb-8 shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhmDp7_KHDTVtISmUjnWecsYmk1c1seqJdIkoeG2JeCF0HmpJGx44GVecJ83N0oesl5xZZeR_o2J_-ZMnpczTcTaKy8VN6dcHao4QDYi7bykSPTCmRr945n34t6lJ7lIWjsSnKSEPcnTshUsxYfw8oX5LLQ0TFLrYjsZE79OVjIP2Q1y8YYSGCGZPN7rh-navT0j-Irm6JrLce40D9G2IKM25iot8qc5TNXKoykZdTkUwyIhGj2fFoJZcx0tG21QOwKTbC410vqzo"/>
+<h3 class="font-display text-gold text-lg tracking-widest mb-4 uppercase">Les Salons Privés</h3>
+<p class="text-sm leading-relaxed mb-6 dark:text-zinc-400">
+                Généreuse, La Cigale ne manque pas d’air et vous invite à profiter de ses mètres carrés historiques pour vos séminaires et réceptions privées.
+            </p>
+<button class="w-full py-4 border border-primary text-primary font-display text-xs tracking-widest uppercase hover:bg-primary hover:text-white transition-colors">
+                Découvrir les salons
+            </button>
+</div>
+<div class="mb-10">
+<img alt="La Boutique de souvenirs" class="w-full h-80 object-cover mb-8 shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTdpq-dOx9iP-W5ukTgOsmJBIsqom7V4nZ3XU3HflGVT9RKnutZ8iiY8XG3pFQH0pVjdJZ89390zHwXWH28bKalujuMH2A28NnEaHlBrwr0KsYbVEhg_umErlw9Qoz8nNj8A6GaSfwEvZJYujmt5moEoQoPW-7pH7jIkCMJ8I99fNgVicuY-UjyOikOAJQRpTfbQg5MB6saD8nc-LiUW6uHPnkeagmB3vw64CAhJQ225wWIjfhNa4DIi7DJhcggsQBiNgxz1PYKbU"/>
+<h3 class="font-display text-gold text-lg tracking-widest mb-4 uppercase">La Boutique</h3>
+<p class="text-sm leading-relaxed mb-6 dark:text-zinc-400">
+                Emportez un morceau de légende avec vous. Objets à l'effigie de La Cigale, chèques cadeaux et produits d'exception.
+            </p>
+<button class="w-full py-4 border border-primary text-primary font-display text-xs tracking-widest uppercase hover:bg-primary hover:text-white transition-colors">
+                Visiter la boutique
+            </button>
+</div>
+</section>
+<section class="relative h-96 flex items-center justify-center">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596450544022-ad066801ca8a?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-fixed bg-center bg-cover"></div>
+<div class="absolute inset-0 bg-gold/10 backdrop-blur-[2px]"></div>
+<div class="relative z-10 text-center px-4">
+<h3 class="text-white font-display text-2xl tracking-[0.3em] mb-6 shadow-sm">LES CÉRAMIQUES</h3>
+<button class="bg-background-light dark:bg-background-dark px-8 py-3 text-gold font-display text-[10px] tracking-widest uppercase shadow-lg">
+                Découvrir le Monument
+            </button>
+</div>
+</section>
+<section class="py-16 bg-background-light dark:bg-background-dark border-y border-gold/10">
+<div class="max-w-xs mx-auto text-center">
+<span class="material-icons-outlined text-gold mb-4 scale-125">location_on</span>
+<h4 class="font-display text-sm tracking-widest mb-2 uppercase">Nous trouver</h4>
+<p class="text-xs dark:text-zinc-400 leading-relaxed mb-8">
+                4 place Graslin (face à l’Opéra)<br/>
+                44000 Nantes, France
+            </p>
+<div class="w-8 h-[1px] bg-gold mx-auto mb-8"></div>
+<span class="material-icons-outlined text-gold mb-4 scale-125">schedule</span>
+<h4 class="font-display text-sm tracking-widest mb-2 uppercase">Horaires</h4>
+<p class="text-xs dark:text-zinc-400 leading-relaxed">
+                Tous les jours de 7h30 à 00h30<br/>
+                Service continu
+            </p>
+<a class="inline-block mt-8 text-primary font-bold tracking-widest text-sm" href="tel:+33251849494">
+                +33 (0)2 51 84 94 94
+            </a>
+</div>
+</section>
+<footer class="bg-primary text-white py-16 px-8 text-center">
+<div class="font-display text-2xl tracking-[0.3em] mb-12">LA CIGALE</div>
+<div class="flex flex-col items-center gap-10 mb-12 grayscale brightness-200 opacity-80">
+<div class="flex flex-col items-center">
+<div class="font-display text-sm tracking-widest mb-1 italic">Le 1</div>
+<div class="w-16 h-4 bg-white/20"></div>
+</div>
+<div class="flex flex-col items-center">
+<div class="font-display text-sm tracking-widest mb-1">ARISTIDE</div>
+<div class="w-20 h-4 bg-white/20"></div>
+</div>
+<div class="flex flex-col items-center">
+<div class="font-display text-lg tracking-widest mb-1 italic">Félix</div>
+<div class="w-12 h-4 bg-white/20"></div>
+</div>
+</div>
+<nav class="flex flex-col gap-4 text-[10px] uppercase tracking-[0.2em] font-medium opacity-70 mb-12">
+<a href="#">Dossier de Presse</a>
+<a href="#">Mentions Légales</a>
+<a href="#">CGV</a>
+<a href="#">Contact</a>
+</nav>
+<div class="text-[9px] opacity-40 uppercase tracking-[0.1em]">
+            © 2024 La Cigale Nantes. Tous droits réservés.
+        </div>
+</footer>
+
+</body></html>
