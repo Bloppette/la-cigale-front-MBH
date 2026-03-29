@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# La Cigale - Homepage Premium Frontend
 
-## Getting Started
+Bienvenue sur le dépôt du projet frontend de la nouvelle page d'accueil de la mythique brasserie nantaise **La Cigale**. Ce projet a été généré via [Next.js](https://nextjs.org/) (App Router), [Tailwind CSS v4](https://tailwindcss.com/) et [TypeScript](https://www.typescriptlang.org/).
 
-First, run the development server:
+## Prérequis
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Assurez-vous d'avoir installé sur votre machine :
+- **Node.js** (version 18.17 ou supérieure recommandée)
+- **npm** (inclus avec Node.js)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation et Démarrage Rapide
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Cloner le dépôt** :
+   \`\`\`bash
+   git clone <url-du-depot-github>
+   cd homepage-la-cigale
+   \`\`\`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Installer les dépendances** :
+   \`\`\`bash
+   npm install
+   \`\`\`
 
-## Learn More
+3. **Lancer le serveur de développement** :
+   \`\`\`bash
+   npm run dev
+   \`\`\`
 
-To learn more about Next.js, take a look at the following resources:
+4. **Visualiser le projet** : 
+   Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts Utiles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- \`npm run dev\` : Lance le serveur en mode développement avec rechargement à chaud.
+- \`npm run build\` : Compile l'application pour la production.
+- \`npm start\` : Démarre le serveur de production (nécessite un \`build\` préalable).
+- \`npm run lint\` : Vérifie la propreté du code via ESLint.
 
-## Deploy on Vercel
+## Architecture Principale (\`/src\`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+L'architecture suit les recommandations par composants (Dumb / Smart pattern adapté Next.js) :
+- \`src/app/\` : Contient le routeur Next.js (pages), le layout racine (chargement des fontes Google Cinzel, Playfair et Montserrat) et les styles globaux (\`globals.css\` avec la config Tailwind `@theme`).
+- \`src/components/ui/\` : Les micro-composants réutilisables (Boutons, Titres, Cartes dynamiques).
+- \`src/components/layout/\` : Le \`Header\` sticky et le \`Footer\`.
+- \`src/components/sections/\` : Les modules métiers constituant la page (Hero, Histoire, Offres, Expérience...).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Déploiement
+
+La solution la plus simple pour déployer une application Next.js est d'utiliser la plateforme [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+Vous pouvez lier directement votre dépôt GitHub à Vercel pour des déploiements automatiques à chaque \`push\`.
