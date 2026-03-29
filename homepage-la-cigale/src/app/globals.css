@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #5B96C3;
+  --color-gold: #C5A059;
+  --color-background-light: #FDFBF7;
+  --color-background-dark: #121212;
+
+  --font-display: var(--font-cinzel), serif;
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-montserrat), sans-serif;
+
+  --radius-DEFAULT: 2px;
+}
